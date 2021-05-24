@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum experiments</title>
+  </head>
+  <body>
+    <canvas id="main-canvas"></canvas>
+
+    <aside id="tutorial-panel-welcome" class="tutorial-panel flex-center">
+      <div class="container">
+        <h3>
+          Welcome to<br />
+          Momentum
+        </h3>
+        <p>
+          <strong>Would you like a tour?</strong>
+          We will play a 5 minute game that will teach you how to use WASD keys
+          and fly around the metaverse
+        </p>
+        <div class="controls">
+          <button id="btn-welcome-start" class="btn">Start</button>
+          <button id="btn-welcome-skip" class="btn ghost">Skip</button>
+        </div>
+      </div>
+    </aside>
+
+    <aside
+      id="tutorial-panel-ws"
+      class="tutorial-panel tutorial-panel-bar-instruction"
+    >
+      <p>Use the keys W and S to move forwards and backwards</p>
+      <div class="progress-bar">
+        <div class="progress-indicator" id="bar-ws"></div>
+      </div>
+    </aside>
+
+    <aside
+      id="tutorial-panel-boost"
+      class="tutorial-panel tutorial-panel-bar-instruction"
+    >
+      <p>Hold Shift to go faster</p>
+      <div class="progress-bar">
+        <div class="progress-indicator" id="bar-boost"></div>
+      </div>
+    </aside>
+
+    <aside
+      id="tutorial-panel-end"
+      class="tutorial-panel tutorial-panel-bar-instruction"
+    >
+      <p>
+        Congratulations! You have finished the tutorial with a perferct score!
+      </p>
+      <div class="controls">
+        <button id="btn-end-finish" class="btn">Finish</button>
+        <button id="btn-end-again" class="btn ghost">Play again</button>
+      </div>
+    </aside>
+  <script defer src="bundle.js"></script></body>
+</html>
